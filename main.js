@@ -1,6 +1,7 @@
 var value1,
     value2,
-    value3
+    value3,
+    operation,
     answer;
 
 var dispanswer = function (value3) {
@@ -9,6 +10,31 @@ var dispanswer = function (value3) {
 
 };
 
+document.getElementById('addBtn').onclick = function(){
+
+  operation = '+';
+
+};
+
+document.getElementById('subBtn').onclick = function(){
+
+  operation = '-';
+
+};
+
+document.getElementById('multBtn').onclick = function(){
+
+  operation = '*';
+
+};
+
+document.getElementById('divBtn').onclick = function(){
+
+  operation = 'p';
+
+};
+
+//This is the operation
 
 document.getElementById('calculateBtn').onclick = function() {
 
@@ -16,7 +42,7 @@ document.getElementById('calculateBtn').onclick = function() {
 
   value2 = Number(document.getElementById('num_two').value);
 
-  answer = value1 / value2;
+  answer = value1 + value2;
 
   dispanswer(answer);
 
